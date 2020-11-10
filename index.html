@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatile" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+  <h1>Contact form </h1>
+
+<form onsubmit="return false">
+</form>
+
+<!-- first and last name -->
+<input type="text" placeholder="Enter your first name" id="firstName" />
+<br><br>
+
+<input type="text" placeholder="Enter your last name" id="lastName" />
+<br><br>
+
+
+ 
+<!--Gender-->
+<input type="radio" id="male" name="gender" value="male"> Male
+<input type="radio" id="female" name="gender" value="female"> Female
+<br><br>
+
+<!--Email-->
+
+<input type="email" placeholder="Email" id="email"/>
+<br><br>
+
+<!--Address & Housenumber-->
+<input type="text" placeholder="Address" id="address"/>
+&nbsp;&nbsp;&nbsp;
+<input type="text" placeholder="House number" id="houseNumber"/>
+
+&nbsp;&nbsp;&nbsp;
+
+<!-- which country you want to chose -->
+<select id="country">
+  <option disabled selected value> -- Select Country -- </option>
+  <option value="Iceland">Iceland</option>
+  <option value="Danmark">Danmark</option>
+  <option value="Sweden">Sweden</option>
+  <option value="Norway">Norway</option>
+  <option value="Finland">Finland</option>
+  <option value="Germany">Germany</option>
+  <option value="France">France</option>
+  <option value="United Kingdom">United Kingdom</option>
+  <option value="United States">USA</option>
+  </select>
+  <br><br>
+
+<!--password-->
+  <input type="password" placeholder="Enter Password" id="password" />&nbsp;
+  <input type="password" placeholder="Enter Password (Check)" id="passwordCheck"/>
+  <br><br>
+  
+<!--checkbox-->
+<input type="checkbox" id="newsletter"/> I want Updates 
+<br><br> 
+
+<!--feedback-->
+<span> Anything on your mind? </span>
+<br>
+<textarea id="question" rows="4"></textarea>
+<br><br>
+
+<!--button-->
+<button onclick="sendContact();">Submit</button>
+
+ 
+
+ <script src="/index.js"></script>
+</body>
+</html>
